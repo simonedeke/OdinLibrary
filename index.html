@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercise</title>
+</head>
+<body>
+    <div class="Output"></div>
+</body>
+<script>
+function Book(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.info = function() {
+        return title + ' by ' + author + ', ' + pages + ' pages, ' + read;
+    }
+}
+
+const myBook = new Book("The Black", "Unknown", 999, "read");
+
+console.log(myBook.info());
+
+</script>
+</html>
